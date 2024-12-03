@@ -19,7 +19,9 @@ fn parse(file_content: &str) -> Vec<Vec<u32>> {
         }
     }
 
-    reports[index].push(value);
+    if in_value {
+        reports[index].push(value);
+    }
 
     reports
 }
