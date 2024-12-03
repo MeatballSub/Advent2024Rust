@@ -91,6 +91,7 @@ pub fn part1(file_content: &str) -> usize {
                 prev = None;
                 sign = None;
                 in_value = false;
+                count_it = false;
             } else {
                 prev = Some(value);
             }
